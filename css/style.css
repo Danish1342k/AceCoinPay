@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #254b63 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Time Up Pop Up  */
+#model {
+    display: none;
+    width: 70%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 100px;
+    margin: 65px auto;
+    border-radius: 10px;
+    box-shadow: 0px 20px 45px -5px rgb(0 0 0 / 20%);
+    color: #fff;
+}
+
+/* #model {
+    display: none;
+    width: 80%;
+    background-color: #fff;
+    padding: 50px;
+    position: relative;
+} */
+
+span#closeIcon {
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px !important;
+    border: 2px solid #3874de;
+    color: #3874de;
+    padding: 0px 0px 0 5px;
+}
+
+#model p {
+    color: #6c757d;
+}
+
+#model button {
+    width: 20%;
+    padding: 0.7rem 0.75rem;
+    border-radius: 4px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: 377px;
+    bottom: 30px;
+}
+
+/* Colors */
+
+main {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    gap: 2rem;
+    background: #fff;
+    padding: 30px;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+}
+
+.rightSide {
+    width: 70%;
+    /* background-color: antiquewhite; */
+
+}
+
+.head {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    margin: 0px 0 20px 0px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    width: 45px;
+    height: 45px;
+    background-color: #035fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.logo h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #05365c;
+    margin-left: 15px;
+
+}
+
+.logo h2 span {
+
+    color: #6c757d;
+    font-weight: lighter;
+}
+
+
+
+#time span.timerBox {
+    background-color: #17254c;
+    color: #fff;
+    height: 1.9em;
+    width: 1.3em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: initial;
+    border-radius: 4px;
+}
+
+.cardTitle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.description h4 {
+    color: #05365c;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.description p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+span.edit-btn {
+    font-size: 14px;
+    color: #285697;
+}
+
+span i {
+    margin-right: 6px;
+}
+
+.inputImage {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+img.paymentIcon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 1px;
+    left: 2px;
+}
+
+img.correctIcon,
+img.uncorrectIcon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+
+input {
+    width: 100%;
+    padding: 0.375rem 2.5rem;
+    border: 1px solid #ced4da;
+    height: 40px;
+    border-radius: 4px;
+}
+
+input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #798b96;
+    outline: 0;
+    box-shadow: 0 0 0 0.10rem rgb(13 110 253 / 25%);
+}
+
+.dotImage,
+.passwords {
+    position: relative;
+}
+
+img.dotedPasswordImg,
+img.dotedPasswordImag {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+.expDate {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.expDate input {
+    width: 37%;
+    padding: 0.375rem 2.5rem;
+    border: 1px solid #ced4da;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.dateSeparate {
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0px 10px;
+    color: #05365c;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem 0.75rem;
+    border-radius: 4px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+}
+
+.leftSide {
+    width: 30%;
+    /* background-color: rgb(104, 61, 5); */
+    /* position: relative; */
+}
+
+.creditCard {
+    width: 65%;
+    height: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 20px 45px -5px rgb(0 0 0 / 20%);
+    z-index: 2;
+    right: -45px;
+    bottom: 375px;
+    background-color: #fff;
+    position: relative;
+}
+
+.creditCard::after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 5px;
+    background-color: #035fff;
+    border-radius: 15px;
+    top: 0;
+    left: 63px;
+    box-shadow: 0 10px 20px #035fff;
+}
+
+.cardicon {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.cardtitle {
+    padding: 20px 20px;
+}
+
+.cardEnd {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.ticket {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #e9ecf5;
+    border-radius: 20px;
+    height: 85%;
+    position: relative;
+    top: 64px;
+}
+
+.ticketContent {
+    padding: 0 25px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 115px;
+}
+
+.ticketContent .contenttwo {
+    display: block;
+    text-align: end;
+    font-weight: 600;
+    color: #262c42;
+    font-size: 16px;
+}
+
+img.applelogo {
+    margin: -5px 6px;
+}
+
+
+.ticketBorder {
+    position: absolute;
+    bottom: 80px;
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    border-style: dashed;
+}
+
+.ticketBorder::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -15px;
+    left: -15px;
+
+}
+
+.ticketBorder::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -15px;
+    right: -15px;
+}
+
+.ticketend {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 3px;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 27px;
+}
+
+.ticketend strong {
+    font-weight: 700;
+    color: #05365c;
+    font-size: 24px;
+}
+
+.ticketend p,
+.ticketend span {
+    color: #6c757d;
+}
+
+.ticketend i {
+    font-size: 25px;
+    color: #05365c;
+}
+
+#payment {
+    display: none;
+    width: 70%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 100px;
+    margin: 65px auto;
+    border-radius: 10px;
+    box-shadow: 0px 20px 45px -5px rgb(0 0 0 / 20%);
+    color: #fff;
+}
+
+#payment button {
+    width: 20%;
+    padding: 0.7rem 0.75rem;
+    border-radius: 4px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: 40%;
+    bottom: 50px;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head {
+        display: block;
+    }
+
+    .cardTitle {
+        margin-top: 30px;
+    }
+
+    .rightSide {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    .leftSide {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .creditCard {
+        width: 50%;
+        height: 50%;
+        right: 110px;
+        top: -10px;
+        position: relative;
+    }
+
+    .creditCard::after {
+        position: absolute;
+        content: "";
+        left: 60px;
+    }
+
+    .ticket {
+        width: 90%;
+        height: 80%;
+        position: relative;
+        left: 75px;
+        top: 95px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head {
+        display: block;
+    }
+
+    .cardTitle {
+        margin-top: 30px;
+    }
+
+    .rightSide {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+
+    .leftSide {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .creditCard {
+        width: 50%;
+        height: 50%;
+        right: 110px;
+        top: -10px;
+        position: relative;
+    }
+
+    .creditCard::after {
+        position: absolute;
+        content: "";
+        left: 60px;
+    }
+
+    .ticket {
+        width: 90%;
+        height: 80%;
+        position: relative;
+        left: 75px;
+        top: 95px;
+    }
+
+    #model button {
+        position: absolute;
+        right: 160px;
+        bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rightSide {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .leftSide {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .creditCard {
+        width: 40%;
+        height: 50%;
+        right: 165px;
+        top: 29px;
+        position: relative;
+    }
+
+    .creditCard::after {
+        position: absolute;
+        content: "";
+        left: 70px;
+    }
+
+    .ticket {
+        width: 70%;
+        height: 90%;
+        position: relative;
+        left: 100px;
+        top: 70px;
+    }
+
+}
