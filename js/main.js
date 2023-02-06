@@ -95,12 +95,12 @@ inputNumberexp.addEventListener("input", function () {
 //onclick of edit changes show reenter the detail
 
 function editDetails() {
-    document.getElementById("inputNumber").value = "";
+    document.getElementById("inputNumberexp").value = "";
     document.getElementsByClassName("form-control")[1].value = "";
     document.getElementsByClassName("form-control")[2].value = "";
 }
 
-document.getElementsByClassName('edit-btn').addEventListener('click', editDetails);
+document.getElementsByClassName('btn-desc')[0].addEventListener('click', editDetails);
 
 //submit button process
 function openpaymentload() {
