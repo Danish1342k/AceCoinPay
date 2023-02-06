@@ -25,19 +25,10 @@ body {
     text-align: center;
     position: relative;
     padding: 100px;
-    margin: 65px auto;
     border-radius: 10px;
     box-shadow: 0px 20px 45px -5px rgb(0 0 0 / 20%);
     color: #fff;
 }
-
-/* #model {
-    display: none;
-    width: 80%;
-    background-color: #fff;
-    padding: 50px;
-    position: relative;
-} */
 
 span#closeIcon {
     position: absolute;
@@ -58,6 +49,8 @@ span#closeIcon {
 
 #model p {
     color: #6c757d;
+    margin: 0px 0 15px 0px;
+
 }
 
 #model button {
@@ -67,12 +60,7 @@ span#closeIcon {
     background-color: #0d6efd;
     border: none;
     color: #fff;
-    position: absolute;
-    right: 377px;
-    bottom: 30px;
 }
-
-/* Colors */
 
 main {
     width: 70%;
@@ -87,8 +75,6 @@ main {
 
 .rightSide {
     width: 70%;
-    /* background-color: antiquewhite; */
-
 }
 
 .head {
@@ -257,20 +243,19 @@ button {
 
 .leftSide {
     width: 30%;
-    /* background-color: rgb(104, 61, 5); */
-    /* position: relative; */
+    position: relative;
 }
 
 .creditCard {
-    width: 65%;
+    width: 70%;
     height: 50%;
     border-radius: 20px;
     box-shadow: 0px 20px 45px -5px rgb(0 0 0 / 20%);
     z-index: 2;
-    right: -45px;
-    bottom: 375px;
+    right: 38px;
+    bottom: 220px;
     background-color: #fff;
-    position: relative;
+    position: absolute;
 }
 
 .creditCard::after {
@@ -281,7 +266,7 @@ button {
     background-color: #035fff;
     border-radius: 15px;
     top: 0;
-    left: 63px;
+    left: 70px;
     box-shadow: 0 10px 20px #035fff;
 }
 
@@ -428,22 +413,8 @@ img.applelogo {
         flex-direction: column;
     }
 
-    #model img {
-        position: absolute;
-        top: 0px;
-        left: 50px;
-    }
-
-    #model p {
-        position: absolute;
-        bottom: 61px;
-        right: 15px;
-    }
-
     #model button {
-        position: absolute;
-        right: 0px;
-        bottom: 10px;
+        width: 100%;
     }
 
     .expDate {
@@ -468,28 +439,23 @@ img.applelogo {
     .leftSide {
         width: 100%;
         height: 500px;
+        position: relative;
     }
 
     .creditCard {
-        width: 40%;
-        right: 105px;
+        width: 70%;
         position: absolute;
-        top: 520px;
-        height: 30%;
-    }
-
-    .creditCard::after {
-        position: absolute;
-        content: "";
-        left: 60px;
     }
 
     .ticket {
         width: 100%;
-        height: 80%;
         position: relative;
-        left: 0;
-        top: 130px;
+    }
+
+    .ticketContent .contenttwo,
+    .ticketContent .contenttwo {
+        display: grid;
+        padding: 10px;
     }
 }
 
@@ -516,36 +482,22 @@ img.applelogo {
     .leftSide {
         width: 100%;
         height: 400px;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .creditCard {
-        width: 50%;
-        height: 50%;
-        right: 110px;
-        top: -10px;
         position: relative;
     }
 
-    .creditCard::after {
+    .creditCard {
+        width: 70%;
         position: absolute;
-        content: "";
-        left: 60px;
     }
 
     .ticket {
         width: 90%;
         height: 80%;
         position: relative;
-        left: 75px;
-        top: 95px;
     }
 
     #model button {
-        position: absolute;
-        right: 160px;
-        bottom: 30px;
+        width: 100%;
     }
 }
 
@@ -564,30 +516,35 @@ img.applelogo {
     .leftSide {
         width: 100%;
         height: 400px;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .creditCard {
-        width: 40%;
-        height: 50%;
-        right: 165px;
-        top: 29px;
         position: relative;
     }
 
-    .creditCard::after {
+    .creditCard {
+        width: 50%;
         position: absolute;
-        content: "";
-        left: 70px;
+        top: 0;
+        left: 165px;
     }
 
     .ticket {
         width: 70%;
         height: 90%;
         position: relative;
-        left: 100px;
-        top: 70px;
     }
 
+    .ticketContent .contenttwo,
+    .ticketContent .contenttwo {
+        display: grid;
+        padding: 10px;
+    }
+
+    .creditCard::after {
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+
+    #model button {
+        width: 50%;
+    }
 }
