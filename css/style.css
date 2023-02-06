@@ -428,6 +428,29 @@ img.applelogo {
         flex-direction: column;
     }
 
+    #model img {
+        position: absolute;
+        top: 0px;
+        left: 50px;
+    }
+
+    #model p {
+        position: absolute;
+        bottom: 61px;
+        right: 15px;
+    }
+
+    #model button {
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+    }
+
+    .expDate {
+        display: block;
+        width: 50%;
+    }
+
     .head {
         display: block;
     }
@@ -438,23 +461,21 @@ img.applelogo {
 
     .rightSide {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin-bottom: 20px;
     }
 
     .leftSide {
         width: 100%;
         height: 500px;
-        margin: 0 auto;
-        display: flex;
     }
 
     .creditCard {
-        width: 50%;
-        height: 50%;
-        right: 110px;
-        top: -10px;
-        position: relative;
+        width: 40%;
+        right: 105px;
+        position: absolute;
+        top: 520px;
+        height: 30%;
     }
 
     .creditCard::after {
@@ -464,11 +485,11 @@ img.applelogo {
     }
 
     .ticket {
-        width: 90%;
+        width: 100%;
         height: 80%;
         position: relative;
-        left: 75px;
-        top: 95px;
+        left: 0;
+        top: 130px;
     }
 }
 
