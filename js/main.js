@@ -92,15 +92,16 @@ inputNumberexp.addEventListener("input", function () {
 
 // only two number shows in  Date/Month Script
 
-const inputs = document.querySelectorAll('inputNumberexp input');
+const inputs = document.getElementById('inputNumberexp');
 
-inputs.forEach(input => {
-    input.addEventListener('input', function () {
+for (let i = 0; i < inputs.length; i++) {
+    inputs[i].addEventListener('input', function () {
         if (this.value.length > 2) {
             this.value = this.value.substr(0, 2);
         }
     });
-});
+}
+
 
 //onclick of edit change show reenter the detail
 
