@@ -291,6 +291,14 @@ button {
     padding: 0px 20px;
 }
 
+#displaydigit h6 {
+    margin: 0 20px;
+}
+
+.mastercardlogo p {
+    font-size: 10px;
+}
+
 .ticket {
     width: 90%;
     margin: 0 auto;

@@ -49,7 +49,7 @@
                 </div>
                 <div class="inputArea inputImage">
                     <img class="paymentIcon" src="image/paymentTimeicon.jpg" alt="pamenticon">
-                    <input type="text" class="form-control" id="inputNumber" placeholder="2412 -7512-3412-3456">
+                    <input type="text" id="inputNumber" pattern="[0-9]{16}" maxlength="19" required>
                     <img class="correctIcon" src="image/correctIcon.jpg" alt="correctIcon" height="30px" width="30px">
                     <img class="uncorrectIcon" src="image/uncorrectIcon.jpg" alt="correctIcon" height="30px"
                         width="35px">
@@ -132,7 +132,7 @@
                         <p>Expiry Date</p>
                     </div>
                     <div class="mastercardlogo">
-                        <img src="image/paymentTimeicon.jpg" alt="cardicon" height="30px" width="50px">
+                        <img src="image/paymentTimeicon.jpg" alt="cardicon" height="30px" width="35px">
                         <p>mastercard</p>
                     </div>
                 </div>

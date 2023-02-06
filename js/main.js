@@ -1,4 +1,3 @@
-
 // Time Up & Pop Up Comes
 
 let minutes = 01;
@@ -37,27 +36,19 @@ function hideModel() {
     document.getElementById("model").style.display = "none";
 }
 
-// Inuput card number detail filling outcome in card javascript are here
+// Inuput card number detail filling outcome in card last four digit OR
+//it changes the image of input also number enter in input has hyphons on it
+
 
 var input = document.getElementById("inputNumber");
 var output = document.getElementById("displayLastFour");
-
-input.addEventListener("input", function () {
-
-    //we can also either substrac or uses slice method anyone
-    // var lastFour = this.value.substr(this.value.length - 4);
-    // output.innerHTML = "**** " + lastFour;
-
-    var lastFour = this.value.slice(-4);
-    output.innerHTML = "**** " + lastFour;
-});
-
-//it changes the image of input also number enter in input has hyphons on it
-const inputNumber = document.getElementById("inputNumber");
 const correctIcon = document.getElementsByClassName("correctIcon")[0];
 const incorrectIcon = document.getElementsByClassName("uncorrectIcon")[0];
 
-inputNumber.addEventListener("input", function () {
+input.addEventListener("input", function () {
+    var lastFour = this.value.slice(15, 19);
+    output.innerHTML = "**** " + lastFour;
+
     let value = this.value.replace(/\D/g, "");
     let formattedValue = "";
 
@@ -69,7 +60,7 @@ inputNumber.addEventListener("input", function () {
     }
     this.value = formattedValue;
 
-    if (inputNumber.value.length === 19) {
+    if (input.value.length === 19) {
         correctIcon.style.display = "block";
         incorrectIcon.style.display = "none";
     } else {
@@ -78,32 +69,30 @@ inputNumber.addEventListener("input", function () {
     }
 });
 
-//Expiry Date/Month Detail Filling  outcome in card  JavaScript are Here
-
+//Expiry Date/year Detail Filling  outcome in card  OR
+//only two number shows in  Date/year Script
 const inputNumberexp = document.getElementById("inputNumberexp");
 const displaydigit = document.getElementById("displaydigit");
 
 inputNumberexp.addEventListener("input", function () {
-    let month = inputNumberexp.children[0].value;
+    let date = inputNumberexp.children[0].value;
     let year = inputNumberexp.children[2].value;
 
-    displaydigit.textContent = `${month}/${year}`;
+    if (date.length > 2) {
+        date = date.substr(0, 2);
+        inputNumberexp.children[0].value = date;
+    }
+
+    if (year.length > 2) {
+        year = year.substr(0, 2);
+        inputNumberexp.children[2].value = year;
+    }
+
+    displaydigit.textContent = `${date}/${year}`;
 });
 
-// only two number shows in  Date/Month Script
 
-const inputs = document.getElementById('inputNumberexp');
-
-for (let i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('input', function () {
-        if (this.value.length > 2) {
-            this.value = this.value.substr(0, 2);
-        }
-    });
-}
-
-
-//onclick of edit change show reenter the detail
+//onclick of edit changes show reenter the detail
 
 function editDetails() {
     document.getElementById("inputNumber").value = "";
