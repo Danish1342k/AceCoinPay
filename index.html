@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Asul&family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +29,7 @@
         <button id="closeBtn" onclick="hideModel()">Close</button>
     </div>
     <main id="contentMain">
-        <div class="rightSide">
+        <div class="leftSide">
             <div class="head">
                 <div class="logo">
                     <i class="fa-brands fa-google-wallet"></i>
@@ -53,7 +59,7 @@
                     <input type="text" id="inputNumber" maxlength="19" required>
                     <img class="correctIcon" src="image/correctIcon.jpg" alt="correctIcon" height="30px" width="30px">
                     <img class="uncorrectIcon" src="image/uncorrectIcon.jpg" alt="correctIcon" height="30px"
-                        width="35px">
+                        width="40px">
                 </div>
                 <div class="cardTitle">
                     <div class="description">
@@ -95,21 +101,25 @@
 
             </form>
         </div>
-        <div class="leftSide">
+        <div class="rightSide">
             <div class="ticket">
                 <div class="ticketContent">
                     <div class="content">
-                        <span>Order Number</span>
-                        <span>comapany</span>
-                        <span>Product</span>
-                        <span>VAT(20%)</span>
+                        <ul>
+                            <li>Order Number</li>
+                            <li>comapany</li>
+                            <li>Product</li>
+                            <li>VAT(20%)</li>
+                        </ul>
                     </div>
                     <div class="contenttwo">
-                        <span><img class="applelogo" src="image/apple-13.svg" alt="apple" width="20px"
-                                height="20px">apple</span>
-                        <span>1266201</span>
-                        <span>MacBook Air</span>
-                        <span>$100.00</span>
+                        <ul>
+                            <li><img class="applelogo" src="image/apple-13.svg" alt="apple" width="13px"
+                                    height="13px">apple</li>
+                            <li>1266201</li>
+                            <li>MacBook Air</li>
+                            <li>$100.00</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="ticketBorder"></div>
@@ -135,7 +145,7 @@
                         <p>Expiry Date</p>
                     </div>
                     <div class="mastercardlogo">
-                        <img src="image/paymentTimeicon.jpg" alt="cardicon" height="30px" width="35px">
+                        <img src="image/paymentTimeicon.jpg" alt="cardicon" height="30px" width="45px">
                         <p>mastercard</p>
                     </div>
                 </div>

@@ -87,14 +87,14 @@ inputNumberexp.addEventListener("input", function () {
         year = year.substr(0, 2);
         inputNumberexp.children[2].value = year;
     }
-    if (date || date > 31 || date < 1 || year || year > 12 || year < 1) {
-        displaydigit.textContent = "Invalid date";
-    } else {
-        displaydigit.textContent = `${date}/${year}`;
-    }
+    // if (date || date > 31 || date < 1 || year || year > 12 || year < 1) {
+    //     displaydigit.textContent = "Invalid date";
+    // } else {
+    //     displaydigit.textContent = `${date}/${year}`;
+    // }
 
 
-    //displaydigit.textContent = `${date}/${year}`;
+    displaydigit.textContent = `${date}/${year}`;
 });
 
 
