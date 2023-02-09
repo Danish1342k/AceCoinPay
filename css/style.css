@@ -266,7 +266,8 @@ button {
     background-color: #035fff;
     border-radius: 15px;
     top: 0;
-    left: 70px;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0 10px 20px #035fff;
 }
 
@@ -310,12 +311,11 @@ button {
 }
 
 .ticketContent {
-    padding: 0 20px;
     display: flex;
-    position: absolute;
     width: 100%;
     justify-content: space-between;
-    bottom: 115px;
+    padding: 170px 20px 0 20px;
+
 }
 
 .ticketContent .contenttwo {
@@ -442,6 +442,23 @@ img.applelogo {
         left: 30px;
     }
 
+    .cardTitle {
+        flex-direction: column;
+    }
+
+    .btn-desc,
+    .description,
+    .dotImage,
+    .expDate,
+    .passwords {
+        width: 100%;
+
+    }
+
+    .expDate {
+        display: block;
+    }
+
     .expDate {
         display: block;
         width: 50%;
@@ -471,16 +488,18 @@ img.applelogo {
         position: absolute;
         right: 28px;
         bottom: 275px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .creditCard::after {
         position: absolute;
-        left: 60px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .ticket {
         width: 100%;
-        position: relative;
     }
 
     .ticketContent .contenttwo,
@@ -497,6 +516,23 @@ img.applelogo {
     }
 
     .head {
+        display: block;
+    }
+
+    .cardTitle {
+        flex-direction: column;
+    }
+
+    .btn-desc,
+    .description,
+    .dotImage,
+    .expDate,
+    .passwords {
+        width: 100%;
+
+    }
+
+    .expDate {
         display: block;
     }
 
@@ -518,17 +554,20 @@ img.applelogo {
     .creditCard {
         width: 70%;
         position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .creditCard::after {
         position: absolute;
         left: 120px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .ticket {
         width: 90%;
         height: 80%;
-        position: relative;
     }
 
     #model button {
@@ -540,6 +579,23 @@ img.applelogo {
     main {
         display: flex;
         flex-direction: column;
+    }
+
+    .cardTitle {
+        flex-direction: column;
+    }
+
+    .btn-desc,
+    .description,
+    .dotImage,
+    .expDate,
+    .passwords {
+        width: 100%;
+
+    }
+
+    .expDate {
+        display: block;
     }
 
     .rightSide {
@@ -556,14 +612,13 @@ img.applelogo {
     .creditCard {
         width: 50%;
         position: absolute;
-        top: 0;
-        left: 165px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .ticket {
         width: 70%;
         height: 90%;
-        position: relative;
     }
 
     .ticketContent .content,
@@ -574,7 +629,8 @@ img.applelogo {
 
     .creditCard::after {
         position: absolute;
-        left: 120px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     #model button {
