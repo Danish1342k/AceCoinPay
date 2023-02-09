@@ -87,20 +87,26 @@ inputNumberexp.addEventListener("input", function () {
         year = year.substr(0, 2);
         inputNumberexp.children[2].value = year;
     }
+    if (date || date > 31 || date < 1 || year || year > 12 || year < 1) {
+        displaydigit.textContent = "Invalid date";
+    } else {
+        displaydigit.textContent = `${date}/${year}`;
+    }
 
-    displaydigit.textContent = `${date}/${year}`;
+
+    //displaydigit.textContent = `${date}/${year}`;
 });
 
 
 //onclick of edit changes show reenter the detail
 
 function editDetails() {
-    document.getElementById("inputNumberexp").value = "";
-    document.getElementsByClassName("form-control")[1].value = "";
-    document.getElementsByClassName("form-control")[2].value = "";
+    document.getElementById("inputNumber").value = "";
+    document.querySelector(".dotImage input").value = "";
+    document.querySelector(".expDate .date").value = "";
+    document.querySelector(".expDate .year").value = "";
+    document.querySelector(".passwords input").value = "";
 }
-
-document.getElementsByClassName('btn-desc')[0].addEventListener('click', editDetails);
 
 //submit button process
 function openpaymentload() {
