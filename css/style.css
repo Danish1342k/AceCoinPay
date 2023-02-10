@@ -456,7 +456,7 @@ img.applelogo {
     color: #fff;
     position: absolute;
     right: 40%;
-    bottom: 50px;
+    bottom: 30px;
     transform: translateY(-50%);
 }
 
@@ -464,27 +464,30 @@ img.applelogo {
     main {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     #model button {
         width: 50%;
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
         right: 60px;
     }
 
     #model img,
     #payment img {
-        width: 100%;
-        height: 100%;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 0%;
+        transform: translateX(-50%);
     }
 
     #model p {
         color: #6c757d;
-        margin: 0px 0 15px 0px;
         position: absolute;
-        top: 150px;
-        left: 30px;
+        top: 80px;
+        left: 10px;
     }
 
     .cardTitle {
@@ -500,16 +503,11 @@ img.applelogo {
     }
 
     .ticketContent {
-        padding: 200px 15px 0 15px;
+        padding: 200px 50px 0 50px;
     }
 
     .expDate {
-        display: block;
-    }
-
-    .expDate {
-        display: block;
-        width: 50%;
+        display: flex;
     }
 
     .head {
@@ -549,6 +547,14 @@ img.applelogo {
         width: 100%;
     }
 
+    #payment button {
+        width: 30%;
+        position: absolute;
+        right: 70px;
+        top: 75%;
+        transform: translateY(-50%);
+    }
+
     /* .ticketContent .contenttwo,
     .ticketContent .contenttwo {
         display: grid;
@@ -561,6 +567,16 @@ img.applelogo {
         display: flex;
         flex-direction: column;
         padding-bottom: 60px;
+        width: 100%;
+    }
+
+    #model img,
+    #payment img {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 15%;
+        transform: translateX(-50%);
     }
 
     .head {
@@ -581,11 +597,11 @@ img.applelogo {
     }
 
     .ticketContent {
-        padding: 145px 20px 0 20px;
+        padding: 110px 50px 0 50px;
     }
 
     .expDate {
-        display: block;
+        display: flex;
     }
 
     .cardTitle {
@@ -624,6 +640,15 @@ img.applelogo {
     #model button {
         width: 100%;
     }
+
+    #payment button {
+        width: 30%;
+        position: absolute;
+        right: 130px;
+        top: 80%;
+        transform: translateY(-50%);
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -651,7 +676,7 @@ img.applelogo {
     }
 
     .expDate {
-        display: block;
+        display: flex;
     }
 
     .leftSide {
@@ -677,6 +702,10 @@ img.applelogo {
         height: 90%;
     }
 
+    .ticketContent {
+        padding: 130px 60px 0 60px;
+    }
+
     /* .ticketContent .content,
     .ticketContent .contenttwo {
         display: grid;
@@ -692,4 +721,5 @@ img.applelogo {
     #model button {
         width: 50%;
     }
+
 }
