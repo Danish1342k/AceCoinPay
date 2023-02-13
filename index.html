@@ -45,7 +45,7 @@
             </div>
             <form action="" onsubmit="openpaymentload(); return false;">
 
-                <div class="cardTitle">
+                <div class="cardTitle edits">
                     <div class="description">
                         <h4>card number</h4>
                         <p>Enter the 15 digit card number on the card</p>
@@ -77,11 +77,11 @@
                         <p>Enter the expiration date on the card</p>
                     </div>
                     <div class="expDate" id="inputNumberexp">
-                        <input type="number" class="date" placeholder="09" minlength="1" required maxlength="31"
-                            required>
+                        <input type="number" class="month" placeholder="09" min="1" max="31" required
+                            onkeypress="if (this.value.length > 1) return false;">
                         <span class="dateSeparate">/</span>
-                        <input type="number" class="year" placeholder="22" minlength="1" required maxlength="12"
-                            required>
+                        <input type="number" class="year" placeholder="22" min="1" max="100" required
+                            onkeypress="if (this.value.length > 1) return false;">
                     </div>
 
                 </div>

@@ -1,16 +1,15 @@
 // Time Up & Pop Up Comes
-
 let minutes = 01;
 let seconds = 59;
 
 function updateTimer() {
-    if (seconds === 0) {
-        minutes--;
-        seconds = 59;
-    } else {
-        seconds--;
-    }
+    // Decrement seconds by 1
+    seconds = (seconds === 0) ? 59 : seconds - 1;
 
+    // If seconds reaches 0, decrement minutes by 1 and reset seconds to 59
+    minutes = (seconds === 59) ? minutes - 1 : minutes;
+
+    // If minutes becomes negative, stop the interval and hide contentMain
     if (minutes < 0) {
         clearInterval(interval);
         document.getElementById("contentMain").style.display = "none";
@@ -18,23 +17,28 @@ function updateTimer() {
         return;
     }
 
+    // Calculate the values for each digit of the timer
     let minute1 = Math.floor(minutes / 10);
     let minute2 = minutes % 10;
     let second1 = Math.floor(seconds / 10);
     let second2 = seconds % 10;
 
+    // Update the timer on the page
     document.getElementById("minute1").innerHTML = minute1;
     document.getElementById("minute2").innerHTML = minute2;
     document.getElementById("second1").innerHTML = second1;
     document.getElementById("second2").innerHTML = second2;
 }
 
+// Set an interval to call updateTimer every second
 let interval = setInterval(updateTimer, 1000);
 
+// Function to hide the model and show contentMain
 function hideModel() {
     document.getElementById("contentMain").style.display = "flex";
     document.getElementById("model").style.display = "none";
 }
+
 
 // Inuput card number detail filling outcome in card last four digit OR
 //it changes the image of input also number enter in input has hyphons on it
@@ -74,28 +78,15 @@ input.addEventListener("input", function () {
 const inputNumberexp = document.getElementById("inputNumberexp");
 const displaydigit = document.getElementById("displaydigit");
 
-inputNumberexp.addEventListener("input", function () {
-    let date = inputNumberexp.children[0].value;
-    let year = inputNumberexp.children[2].value;
+const monthInput = inputNumberexp.querySelector(".month");
+const yearInput = inputNumberexp.querySelector(".year");
 
-    if (date.length > 2) {
-        date = date.substr(0, 2);
-        inputNumberexp.children[0].value = date;
-    }
+monthInput.addEventListener("input", updateDisplayDigit);
+yearInput.addEventListener("input", updateDisplayDigit);
 
-    if (year.length > 2) {
-        year = year.substr(0, 2);
-        inputNumberexp.children[2].value = year;
-    }
-    // if (date || date > 31 || date < 1 || year || year > 12 || year < 1) {
-    //     displaydigit.textContent = "Invalid date";
-    // } else {
-    //     displaydigit.textContent = `${date}/${year}`;
-    // }
-
-
-    displaydigit.textContent = `${date}/${year}`;
-});
+function updateDisplayDigit() {
+    displaydigit.innerHTML = `<sup>${monthInput.value}/${yearInput.value}</sup>`;
+}
 
 
 //onclick of edit changes show reenter the detail

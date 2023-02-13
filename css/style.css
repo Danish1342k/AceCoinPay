@@ -465,6 +465,23 @@ img.applelogo {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-top: 700px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .logo i {
+        width: 25px;
+        height: 25px;
+        padding: 4px 0;
+        font-size: 16px;
+    }
+
+    #time {
+        display: flex;
     }
 
     #model button {
@@ -490,6 +507,14 @@ img.applelogo {
         left: 10px;
     }
 
+    .cardTitle.edits {
+        flex-direction: inherit;
+    }
+
+    .cardTitle.edits .btn-desc {
+        width: 5%;
+    }
+
     .cardTitle {
         flex-direction: column;
     }
@@ -510,9 +535,9 @@ img.applelogo {
         display: flex;
     }
 
-    .head {
+    /* .head {
         display: block;
-    }
+    } */
 
     .cardTitle {
         margin-top: 30px;
