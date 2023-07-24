@@ -21,141 +21,145 @@
 </head>
 
 <body>
-    <div id="model">
-        <span id="closeIcon" onclick="hideModel()"><i class="fa fa-close"></i></span>
-        <img src="image/popimg.PNG" alt="pop-up">
-        <p>Unable to fill detail in given time <br>
-            Don't You Worry Just Try again</p>
-        <button id="closeBtn" onclick="hideModel()">Close</button>
-    </div>
-    <main id="contentMain">
-        <div class="leftSide">
-            <div class="head">
-                <div class="logo">
-                    <i class="fa-brands fa-google-wallet"></i>
-                    <h2>AceCoin<span class="mutedColor">Pay</span></h2>
-                </div>
-                <div id="time">
-                    <span class="timerBox" id="minute1">0</span>
-                    <span class="timerBox" id="minute2">0</span>
-                    <span class="timerDivider">:</span>
-                    <span class="timerBox" id="second1">0</span>
-                    <span class="timerBox" id="second2">0</span>
-                </div>
-            </div>
-            <form action="" onsubmit="openpaymentload(); return false;">
-
-                <div class="cardTitle edits">
-                    <div class="description">
-                        <h4>card number</h4>
-                        <p>Enter the 15 digit card number on the card</p>
-                    </div>
-                    <div class="btn-desc">
-                        <span onclick="editDetails()"><i class="fa-solid fa-pen"></i>Edit</span>
-                    </div>
-                </div>
-                <div class="inputArea inputImage">
-                    <img class="paymentIcon" src="image/paymentTimeicon.jpg" alt="pamenticon">
-                    <input type="text" id="inputNumber" maxlength="19" required>
-                    <img class="correctIcon" src="image/correctIcon.jpg" alt="correctIcon" height="30px" width="30px">
-                    <img class="uncorrectIcon" src="image/uncorrectIcon.jpg" alt="correctIcon" height="30px"
-                        width="40px">
-                </div>
-                <div class="cardTitle">
-                    <div class="description">
-                        <h4>CVV Number</h4>
-                        <p>Enter the 3 or 4 digit number on the card</p>
-                    </div>
-                    <div class="dotImage">
-                        <input type="password" class="form-control" placeholder="327" maxlength="3" required>
-                        <img src="image/dots.PNG" class="dotedPasswordImg" alt="passwordDot" width="35px" height="30px">
-                    </div>
-                </div>
-                <div class="cardTitle">
-                    <div class="description">
-                        <h4>Expiry Date</h4>
-                        <p>Enter the expiration date on the card</p>
-                    </div>
-                    <div class="expDate" id="inputNumberexp">
-                        <input type="number" class="month" placeholder="09" min="1" max="31" required
-                            onkeypress="if (this.value.length > 1) return false;">
-                        <span class="dateSeparate">/</span>
-                        <input type="number" class="year" placeholder="22" min="1" max="100" required
-                            onkeypress="if (this.value.length > 1) return false;">
-                    </div>
-
-                </div>
-                <div class="cardTitle">
-                    <div class="description">
-                        <h4>Password</h4>
-                        <p>Enter your Dynamic password</p>
-                    </div>
-                    <div class="passwords">
-                        <input type="password" placeholder="********" maxlength="8" required>
-                        <img src="image/dots.PNG" class="dotedPasswordImag" alt="passwordDot" width="35px"
-                            height="30px">
-                    </div>
-                </div>
-                <button type="submit">Pay
-                    Now</button>
-
-            </form>
+    <main class="submain">
+        <div id="model">
+            <span id="closeIcon" onclick="hideModel()"><i class="fa fa-close"></i></span>
+            <img src="image/popimg.PNG" alt="pop-up">
+            <p>Unable to fill detail in given time <br>
+                Don't You Worry Just Try again</p>
+            <button id="closeBtn" onclick="hideModel()">Close</button>
         </div>
-        <div class="rightSide">
-            <div class="ticket">
-                <div class="ticketContent">
-                    <div class="content">
-                        <ul>
-                            <li>Order Number</li>
-                            <li>comapany</li>
-                            <li>Product</li>
-                            <li>VAT(20%)</li>
-                        </ul>
+        <div class="main" id="contentMain">
+            <div class="leftSide">
+                <div class="head">
+                    <div class="logo">
+                        <i class="fa-brands fa-google-wallet"></i>
+                        <h2>AceCoin<span class="mutedColor">Pay</span></h2>
                     </div>
-                    <div class="contenttwo">
-                        <ul>
-                            <li><img class="applelogo" src="image/apple-13.svg" alt="apple" width="13px"
-                                    height="13px">apple</li>
-                            <li>1266201</li>
-                            <li>MacBook Air</li>
-                            <li>$100.00</li>
-                        </ul>
+                    <div id="time">
+                        <span class="timerBox" id="minute1">0</span>
+                        <span class="timerBox" id="minute2">0</span>
+                        <span class="timerDivider">:</span>
+                        <span class="timerBox" id="second1">0</span>
+                        <span class="timerBox" id="second2">0</span>
                     </div>
                 </div>
-                <div class="ticketBorder"></div>
-                <div class="ticketend">
-                    <p>You have to pay <br> <strong>549</strong><span>.99 USD</span></p>
-                    <i class="fa-sharp fa-solid fa-scroll"></i>
+                <form action="" onsubmit="openpaymentload(); return false;">
+
+                    <div class="cardTitle edits">
+                        <div class="description">
+                            <h4>card number</h4>
+                            <p>Enter the 15 digit card number on the card</p>
+                        </div>
+                        <div class="btn-desc">
+                            <span onclick="editDetails()"><i class="fa-solid fa-pen"></i>Edit</span>
+                        </div>
+                    </div>
+                    <div class="inputArea inputImage">
+                        <img class="paymentIcon" src="image/paymentTimeicon.jpg" alt="pamenticon">
+                        <input type="text" id="inputNumber" maxlength="19" required>
+                        <img class="correctIcon" src="image/correctIcon.jpg" alt="correctIcon" height="30px"
+                            width="30px">
+                        <img class="uncorrectIcon" src="image/uncorrectIcon.jpg" alt="correctIcon" height="30px"
+                            width="40px">
+                    </div>
+                    <div class="cardTitle">
+                        <div class="description">
+                            <h4>CVV Number</h4>
+                            <p>Enter the 3 or 4 digit number on the card</p>
+                        </div>
+                        <div class="dotImage">
+                            <input type="password" class="form-control" placeholder="327" maxlength="3" required>
+                            <img src="image/dots.PNG" class="dotedPasswordImg" alt="passwordDot" width="35px"
+                                height="30px">
+                        </div>
+                    </div>
+                    <div class="cardTitle">
+                        <div class="description">
+                            <h4>Expiry Date</h4>
+                            <p>Enter the expiration date on the card</p>
+                        </div>
+                        <div class="expDate" id="inputNumberexp">
+                            <input type="number" class="month" placeholder="09" min="1" max="31" required
+                                onkeypress="if (this.value.length > 1) return false;">
+                            <span class="dateSeparate">/</span>
+                            <input type="number" class="year" placeholder="22" min="1" max="100" required
+                                onkeypress="if (this.value.length > 1) return false;">
+                        </div>
+
+                    </div>
+                    <div class="cardTitle">
+                        <div class="description">
+                            <h4>Password</h4>
+                            <p>Enter your Dynamic password</p>
+                        </div>
+                        <div class="passwords">
+                            <input type="password" placeholder="********" maxlength="8" required>
+                            <img src="image/dots.PNG" class="dotedPasswordImag" alt="passwordDot" width="35px"
+                                height="30px">
+                        </div>
+                    </div>
+                    <button type="submit">Pay
+                        Now</button>
+
+                </form>
+            </div>
+            <div class="rightSide">
+                <div class="ticket">
+                    <div class="ticketContent">
+                        <div class="content">
+                            <ul>
+                                <li>Order Number</li>
+                                <li>comapany</li>
+                                <li>Product</li>
+                                <li>VAT(20%)</li>
+                            </ul>
+                        </div>
+                        <div class="contenttwo">
+                            <ul>
+                                <li><img class="applelogo" src="image/apple-13.svg" alt="apple" width="13px"
+                                        height="13px">apple</li>
+                                <li>1266201</li>
+                                <li>MacBook Air</li>
+                                <li>$100.00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ticketBorder"></div>
+                    <div class="ticketend">
+                        <p>You have to pay <br> <strong>549</strong><span>.99 USD</span></p>
+                        <i class="fa-sharp fa-solid fa-scroll"></i>
+                    </div>
+                </div>
+                <div class="creditCard">
+                    <div class="cardicon">
+                        <div class="chip"><img src="image/chip.jpg" alt="chip" height="40px" width="40px"></div>
+                        <div class="wifi"><img src="image/wifi.jpg" alt="chip" height="30px" width="35px"></div>
+                    </div>
+                    <div class="cardtitle">
+                        <h5>Jonathan Michael</h5>
+                        <h5 id="displayLastFour">
+                            <sup>****</sup>
+                        </h5>
+                    </div>
+                    <div class="cardEnd">
+                        <div class="divid">
+                            <h6 id="displaydigit"><sup>**/**</sup></h6>
+                            <p>Expiry Date</p>
+                        </div>
+                        <div class="mastercardlogo">
+                            <img src="image/paymentTimeicon.jpg" alt="cardicon" height="30px" width="45px">
+                            <p>mastercard</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="creditCard">
-                <div class="cardicon">
-                    <div class="chip"><img src="image/chip.jpg" alt="chip" height="40px" width="40px"></div>
-                    <div class="wifi"><img src="image/wifi.jpg" alt="chip" height="30px" width="35px"></div>
-                </div>
-                <div class="cardtitle">
-                    <h5>Jonathan Michael</h5>
-                    <h5 id="displayLastFour">
-                        <sup>****</sup>
-                    </h5>
-                </div>
-                <div class="cardEnd">
-                    <div class="divid">
-                        <h6 id="displaydigit"><sup>**/**</sup></h6>
-                        <p>Expiry Date</p>
-                    </div>
-                    <div class="mastercardlogo">
-                        <img src="image/paymentTimeicon.jpg" alt="cardicon" height="30px" width="45px">
-                        <p>mastercard</p>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div id="payment">
+            <img src="image/payment in process.jpg" alt="pop-up" width="250px" height="250px">
+            <button id="closeBtnn" onclick="hideModeltwo()">Close</button>
         </div>
     </main>
-    <div id="payment">
-        <img src="image/payment in process.jpg" alt="pop-up" width="250px" height="250px">
-        <button id="closeBtnn" onclick="hideModeltwo()">Close</button>
-    </div>
     <script src="js/main.js"></script>
 
 </body>
