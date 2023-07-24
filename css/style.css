@@ -67,13 +67,13 @@ span#closeIcon {
 /* main AceCoinPay css */
 
 main {
-    width: 70%;
-    margin: 0px auto;
-    display: flex;
-    gap: 2rem;
+    width: 65%;
     background: #fff;
+    margin: 0 auto;
+    display: flex;
     padding: 30px;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    justify-content: space-between;
 }
 
 /* leftside of card css  */
@@ -338,7 +338,7 @@ h6#displaydigit sup {
     border-radius: 20px;
     height: 85%;
     position: relative;
-    top: 64px;
+    top: 80px;
 }
 
 .ticketContent {
@@ -588,6 +588,9 @@ img.applelogo {
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
+    body {
+        display: block;
+    }
     main {
         display: flex;
         flex-direction: column;
@@ -645,10 +648,11 @@ img.applelogo {
     }
 
     .creditCard {
-        width: 70%;
+        width: 50%;
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
+        top: 0;
     }
 
     .creditCard::after {
@@ -658,8 +662,10 @@ img.applelogo {
     }
 
     .ticket {
-        width: 90%;
+        width: 60%;
         height: 80%;
+        top: 120px;
+        position: relative;
     }
 
     #model button {
@@ -677,6 +683,11 @@ img.applelogo {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+    body{
+display: block;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -720,6 +731,7 @@ img.applelogo {
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
+        top: 0;
     }
 
     .ticket {
